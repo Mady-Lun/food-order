@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.header {
+  background-color: #745be3;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.nav {
+  overflow: hidden;
+  background-color: #333;
+  text-align: center;
+  position: sticky;
+  
+}
+
+.nav a {
+  
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.main {
+  padding: 20px;
+}
+
+.food-item {
+  border: 1.5px solid #ddd;
+  padding: 10px;
+  margin-bottom: 20px; 
+ 
+}
+
+.food-item img {
+  float: left;
+  margin-right: 10px;
+  width: 100px; 
+  height: 100px; 
+  display: flex;
+  align-items: center;
+ 
+}
+.food-item .price {
+  float: right;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: #f2f2f2;
+  padding: 10px;
+  text-align: center;
+}
+.plus{
+    padding: 5px 7px;
+    font-weight: bold;
+    right:3px
+}
+.order{
+    display: flex;
+}
+
+.confirm{
+    text-align: center;
+    margin: 40px;
+}
+
+.button{
+    padding: 15px 30px;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 15px;
+    border: none;
+    background-color:#745be3;
+    color: white;
+}
+.button:hover{
+    background-color: #8c80c3;
+    transition: 0.15s;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="header">
+  <h1>Boo Dev</h1>
+</div>
+
+<div class="nav">
+  <a href="#">Home</a>
+  <a href="#">Menu</a>
+  <a href="#">Order Online</a>
+  <a href="#">Contact</a>
+</div>
+
+<div class="main">
+  
+  <div class="food-item">
+    <img src="https://bing.com/th?id=OSK.ebfd52bb0357f824932647ab0e28018d">
+    <h3>Pepperoni Pizza</h3>
+    <p>Delicious pepperoni pizza with cheese and tomato sauce</p>
+    <div class="price">$10</div>
+    <div class="order">
+        <div>
+            <label for="num">Number of Order</label>
+            <input type="number">
+        </div>
+        <div class="check">
+            <input style="height:fit-content;" type="checkbox" required>
+        </div>
+    </div>
+    
+  </div>
+
+  <div class="food-item" >
+    <img src="https://th.bing.com/th?id=OSK.d264bdb159de182f28b4f3b26f6e22b1&w=612&h=459&c=7&rs=1&qlt=80&o=6&cdv=1&dpr=1.3&pid=16.1">
+    <h3>Cheese Burger</h3>
+    <p>Juicy burger with beef patty, cheese, lettuce and tomato</p>
+    <div class="price">$8</div>
+    <div class="order">
+        <div>
+            <label for="num">Number of Order</label>
+            <input type="number">
+        </div>
+        <div class="check">
+            <input style="height:fit-content;" type="checkbox" required>
+        </div>
+    </div>
+  </div>
+
+  <div class="food-item" >
+    <img src="https://i.pinimg.com/564x/88/bd/37/88bd370c8dd5b36d936040add99f1a9f.jpg">
+    <h3>Chicken Sandwich</h3>
+    <p>A juicy chicken breast filet with lettuce, tomato, and mayo on a toasted brioche bun.</p>
+    <div class="price">$7.5</div>
+    <div class="order">
+        <div>
+            <label for="num">Number of Order</label>
+            <input type="number">
+        </div>
+        <div class="check">
+            <input style="height:fit-content;" type="checkbox" required>
+        </div>
+    </div>
+  </div>
+
+  <div class="food-item" >
+    <img src="https://i.pinimg.com/564x/af/7e/a4/af7ea464954968ecd63267854c6534b6.jpg">
+    <h3>Spaghetti and Meatballs</h3>
+    <p>Tender beef meatballs served with pasta and marinara sauce. Topped with parmesan cheese.</p>
+    <div class="price">$7</div>
+    <div class="order">
+        <div>
+            <label for="num">Number of Order</label>
+            <input type="number">
+        </div>
+        <div class="check">
+            <input style="height:fit-content;" type="checkbox" required>
+        </div>
+    </div>
+  </div>
+
+  <div class="food-item" >
+    <img src="https://i.pinimg.com/564x/50/ee/ec/50eeec1f7a58beea6827b9fbc35c4244.jpg">
+    <h3>Salmon Salad</h3>
+    <p>Flaky salmon served on top of mixed greens, cherry tomatoes, cucumbers, and an olive oil lemon dressing.</p>
+    <div class="price">$12</div>
+    <div class="order">
+        <div>
+            <label for="num">Number of Order</label>
+            <input type="number">
+        </div>
+        <div class="check">
+            <input style="height:fit-content;" type="checkbox" required>
+        </div>
+    </div>
+    
+  </div>
+  
+</div>
+<p>Note: We do not serve drinks.<br>
+    Note: Please refer to the other shops. 
+</p>
+<div class="confirm">
+    <button class="button">Order</button>
+</div>
+
+<div class="footer">
+    <footer>
+        <p>Boo Dev</p>
+        <p>Email: <a href="#" style="color: red;">boo.dev@gmail.com</a></p>
+        <p>Facebook: <a href="#"> Boo Dev</a></p>
+        <p>Contact: <a href="#">(+885) 98 345 234</a></p>
+        
+    </footer>       
+
+</div>
+
+</body>
+</html>
